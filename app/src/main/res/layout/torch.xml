@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:minWidth="25px"
+    android:id="@+id/powerlay"
+    android:minHeight="25px">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/power"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/power_on"
+        android:onClick="onClickM"
+        android:layout_marginTop="20dp"
+        android:minWidth="125dp"
+        android:minHeight="125dp"/>
+</LinearLayout>

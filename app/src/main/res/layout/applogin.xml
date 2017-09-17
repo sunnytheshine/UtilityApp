@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/bg2">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context=".LoginActivity"
+        android:id="@+id/mam">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/b"
+                android:background="@mipmap/loginicon" />
+
+            <EditText
+                android:id="@+id/LoginUserName"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:ems="8"
+                android:layout_below="@+id/b"
+                android:hint="Email/Id"
+                android:singleLine="true"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="1dp"
+				android:gravity="center_vertical|fill"
+                android:textColorHint="@color/bluelight"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/bluelight"
+                android:textSize="20dp">
+				<requestFocus />
+				</EditText>
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_lay"
+                android:text="G0"
+                android:onClick="loginToRest"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@mipmap/prize"
+            android:layout_below="@+id/layout"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</ScrollView>
